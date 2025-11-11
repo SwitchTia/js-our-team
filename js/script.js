@@ -72,8 +72,6 @@ function printCardGrid (){
   teamContainer.innerHTML = cardsString;
 }
 
-
-
 function createCard(member) {
 
   for (let i = 0; i < teamMembers.length; i++) {
@@ -100,3 +98,13 @@ function createCard(member) {
   }
 }
 printCardGrid(teamMembers);
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const name = nameInput.value;
+    const role = roleInput.value;
+    const email = emailInput.value;
+
+  
+});
