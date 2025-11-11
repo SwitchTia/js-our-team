@@ -37,7 +37,6 @@ const teamMembers = [
   }
 ];
 
-printCardGrid(teamMembers);
 
 const teamContainer = document.querySelector(".cards-container");
 
@@ -63,7 +62,7 @@ function createCard(member) {
     return `
                 <div class="col-12 col-md-4">
                     <div class="card shadow-sm h-100">
-                        <div class="row g-0 align-items-center">
+                        <div class="row g-0 d-flex align-items-center">
                             <div class="col-4 card-img">
                                 <img src="${img}" class="img-fluid">
                             </div>
@@ -80,3 +79,4 @@ function createCard(member) {
   `;
   }
 }
+printCardGrid(teamMembers);
