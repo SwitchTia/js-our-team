@@ -60,10 +60,12 @@ function createCard(member) {
     const { name, role, email, img } = member;
 
     return `
-                <div class="col-12 col-md-4">
-                    <div class="card shadow-sm h-100">
-                        <div class="row g-0 d-flex align-items-center">
-                            <div class="col-4 card-img">
+                <div class="row d-flex flex-wrap">
+                  
+                    <div class="col-12 col-md-4 col-lg-2 ">
+                        <div class="card shadow">
+                          <div class="d-flex ">
+                            <div class="col-4 m-3">
                                 <img src="${img}" class="img-fluid">
                             </div>
                             <div class="col-8">
@@ -73,8 +75,10 @@ function createCard(member) {
                                     <a href="" class="text-decoration-none small">${email}</a>
                                 </div>
                             </div>
+                          </div>
                         </div>
                     </div>
+                
                 </div>
   `;
   }
