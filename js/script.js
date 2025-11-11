@@ -34,7 +34,27 @@ const teamMembers = [
     role: "Analyst",
     email: "danielaamet@team.com",
     img: "img/female3.png"
+  },
+  {
+    name: "Daniela Amet",
+    role: "Analyst",
+    email: "danielaamet@team.com",
+    img: "img/female3.png"
+  },
+  {
+    name: "Marta Ipsum",
+    role: "SEO Specialist",
+    email: "martarossi@team.com",
+    img: "img/female2.png"
+  },
+  {
+    name: "Giorgio Verdi",
+    role: "Back-end Developer",
+    email: "giorgioverdi@team.com",
+    img: "img/male2.png"
   }
+  
+  
 ];
 
 
@@ -60,26 +80,22 @@ function createCard(member) {
     const { name, role, email, img } = member;
 
     return `
-                <div class="row d-flex flex-wrap">
-                  
-                    <div class="col-12 col-md-4 col-lg-2 ">
-                        <div class="card shadow">
-                          <div class="d-flex ">
-                            <div class="col-4 m-3">
-                                <img src="${img}" class="img-fluid">
-                            </div>
-                            <div class="col-8">
-                                <div class="card-body">
-                                    <h5 class="card-title mb-1">${name}</h5>
-                                    <p class="card-text text-muted mb-1">${role}</p>
-                                    <a href="" class="text-decoration-none small">${email}</a>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                
+            <div class="col-12 col-md-4 p-1">
+              <div class="card shadow">
+                <div class="d-flex">
+                  <div class="col-4 m-3">
+                      <img src="${img}" class="img-fluid">
+                  </div>
+                  <div class="col-8">
+                      <div class="card-body">
+                          <h5 class="card-title mb-1">${name}</h5>
+                          <p class="card-text text-muted mb-1">${role}</p>
+                          <a href="" class="text-decoration-none small">${email}</a>
+                      </div>
+                  </div>
                 </div>
+              </div>
+            </div>         
   `;
   }
 }
